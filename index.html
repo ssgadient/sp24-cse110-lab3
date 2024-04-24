@@ -5,21 +5,25 @@
     <meta charset="UTF-8">
     <meta name="author" content="Stefan Gadient">
     <link rel="icon" type="image/x-icon" href="/media/favicon.ico">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header>
-      <h2>Link Tree</h2>
       <nav>
-        <a href="https://github.com/ssgadient/CSE110-Lab-2">Github for this project</a>
-        <a href="https://ssgadient.github.io/CSE110-Lab-1">About the author</a>
+        Link Tree
+        <a href="https://github.com/ssgadient/CSE110-Lab-2">Github</a>
+        <a href="https://ssgadient.github.io/CSE110-Lab-1">About me</a>
       </nav>
     </header>
     <main>
       <hr>
-      <h1>Squidward's Surprise Birthday Party!</h1>
-      <h3>Date: 04/16/2024</h3>
+      <section class="title-section">
+        <h1>Squidward's Surprise Birthday Party!</h1>
+        <h3>Date: 04/23/2024</h3>
+      </section>
       <hr>
-      <section>
+      <section class="attendance">
+        <img style="float: right" src="https://ssgadient.github.io/CSE110-Lab-2/media/squidward-img.jpg" alt="Squidward meme" width="40%" height=auto>
         <h2>Attendance:</h2>
           <h3>Present:</h3>
           <ul>
@@ -51,7 +55,7 @@
       </div>
       <hr>
 
-      <section>
+      <section class="agenda">
         <h2>Meeting Agenda:</h2>
         <ol>
           <li>Brainstorm event ideas and <span>prank</span> after the party</li>
@@ -81,7 +85,7 @@
       </section>
 
       <hr>
-      <section>
+      <section class="todo">
         <h2>Comments, Questions, and Concerns:</h2>
         <ul>
           <li>Squidward might think: <i>Are they trying to prank me?</i></li>
@@ -96,9 +100,8 @@
       </section>
 
       <hr>
-      <section>
+      <section class="media">
         <h2>Media:</h2>
-        <img src="https://ssgadient.github.io/CSE110-Lab-2/media/squidward-img.jpg" alt="Squidward meme" width="570" height="300">
         <details>
           <summary>Extra squidward meme</summary>
           <img src="https://ssgadient.github.io/CSE110-Lab-2/media/squidward-img2.jpg" alt="Squidward meme 2" width="500" height="500">
@@ -186,13 +189,13 @@
           </fieldset>
 
           <fieldset>
-            <legend>Question 5: Any allergies? </legend>
+            <legend>Question 6: Any allergies? </legend>
               <input type="text" id="allergies"/>
               <label for="allergies"></label><br />
           </fieldset>
 
           <fieldset>
-            <legend>Question 6: Any other concerns? </legend>
+            <legend>Question 7: Any other concerns? </legend>
               <textarea>List any other concerns here.</textarea>
           </fieldset>
 

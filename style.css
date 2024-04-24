@@ -28,7 +28,7 @@ nav {
 }
 
 nav a {
-    color: color(display-p3 1 0 0.331);
+    color: color(rgb 1 0 0.331);
     text-decoration: none; /* Remove underline from links */
     border-style: solid; /* Border style */
     border-color: #555; /* Border color */

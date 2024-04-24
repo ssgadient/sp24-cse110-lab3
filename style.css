@@ -1,8 +1,12 @@
 /* Comment: write down comments to make your css easier to read */
 
 /* Color: apply colors to your HTML elements */
+
+* {
+    font-family: "Comic Sans MS";
+}
+
 body {
-    font-family: "Comic Sans MS", cursive;
     background-color: #ffffff;  /* Fallback color */
     background-color: rgb(0, 14, 255);
     position: static;
@@ -10,7 +14,7 @@ body {
 }
 
 main {
-    margin: auto /* Margin auto */
+    margin-top: 70px /* Margin auto */
 }
 
 nav {
@@ -55,7 +59,12 @@ nav a:hover {
 
 h2 {
     color: color-mix(in lch, plum 40%, pink);
-    font-size: 30px;
+    font-size: 36px;
+}
+
+h3:has(+ p) {
+  color: orange;
+  font-style: italic;
 }
 
 h3 {
@@ -102,87 +111,29 @@ form button:active {
     display: inline;
 }
 
-/*
+#last-week {
+    background-color: orange;
+    padding: 20px 20px 20px 20px;
+}
 
-1. General CSS Topics:
+a[href="https://ssgadient.github.io/CSE110-Lab-1"] {
+    color: maroon;
+}
 
--Comment  write down comments to make your css easier to read 
- 
+.agenda {
+    & .brainstorm {
+        color: yellow;
+    }
+}
 
--Color                                                apply colors to your HTML elements 
---rgb(r, g, b) or rgba(r, g, b, a)      red, green, blue, alpha values 
---#FFF or #FFFFFF                     hex codes 
---hsl(h, s, l) or hsla(h, s, l, a)        hue, saturation, lightness, alpha values 
---Color name (i.e ‘orange’)
---Wider-gamut color:
----color(colorspace c1 c2 c3[ / A])      predefined color space, values for color space
----color-mix(method, color1[ p1], color2[ p2])   method to mix colors, values & percentages of color
+audio + p, fieldset > legend {
+    color: red;
+}
 
--CSS Variables & Fallbacks
---Show at least one example of using a CSS variable that also has a fallback. 
+video ~ a {
+    color: bisque;
+}
 
--Background     apply background styles to your elements 
---background-color
- 
-
--Unit      units of measurement for sizing and spacing your elements 
---Use 3 unique relative units total
---Use 3 unique absolute units total
- 
-
--Box Model      configure the containers that holds your HTML content 
-(“long” and “short” refer to longhand and shorthand syntax and should give the same results. They’re simply different ways to declare your style rules, use at least one of each syntax. You must use both long and short hand notations for each of the following: margin, padding, border) 
---Margin      spacing between html elements 
----Long (margin-top, margin-bottom, margin-left, margin-right)
----Short (margin: <top> <right> <bottom> <left>)
----Auto margins: margin: auto
---Padding      spacing within html elements 
----Long (padding-top, padding-bottom, padding-left, padding-right)
----Short (padding: <top> <right> <bottom> <left>)
---Borders.      borders around html elements, hint: apply borders before testing out padding and margin to better understand the difference between the two 
----border-style
----border-color
----border-width
----border-radius
-
--Text      style your text 
---color
---text-decoration
---text-align
-
--Display
---Experiment with these values: none, block, inline-block, inline. Include at least two of them in your page.
---Apply these values to the display property
-
--Sizing      set the height and width for an element 
---height
---width
---max-width
---min-width
-
--Position      element positioning on the page 
---2 of the following values: static, relative, fixed, absolute, sticky
----Apply these values to the position property
-
--Pseudo-class      elements that exist in your document conditionally 
---:hover
---:active
-
--Layouts
---Flexbox    allow your elements to lay themselves out automatically 
----apply flex to the display property
----Must have more than two children within the element that is using flexbox. Must use minimum three of the flexbox related attributes
---Grid          instantiate a grid for your layouts 
----apply grid to the display property
----Must have more than two children within the element that is using the grid. Must use a minimum of three of the grid related attributes
-
--Responsiveness        make your website friendly for multiple devices 
---At least one query based on the screen width
----Media Query
---Check the DevTools in your browser! Make sure your site works and looks fine on the three main types of form factors (Very small screen (phone), tablet or smaller laptop, and desktop).
---The layout of your page should automatically reflow when the size changes, meaning, we shouldn't have to pinch and zoom in a lot to read text, click buttons, etc.
-
--Fonts        pick varying font styles to make your text fun to read 
---Include and use a 3rd party font (https://fonts.google.com/.). You can load the font in either your HTML or your CSS
-
-*/
+p.song {
+    font-style: italic;
+}
